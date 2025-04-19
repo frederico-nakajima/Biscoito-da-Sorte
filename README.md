@@ -16,14 +16,11 @@
 <br>
 
 <p align="center">
-  <img alt="imagem da tela inicial" src="assets/Home.png" width="100%">
+  <img alt="imagem da tela inicial" src="assets/Capa.png" width="100%">
 </p>
 
-<br>
 
-<p align="center">
-  <img alt="imagem da tela inicial" src="assets/Sorte.png" width="100%">
-</p>
+
 
 ## 🚀 Tecnologias
 
