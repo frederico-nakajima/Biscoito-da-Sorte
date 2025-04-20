@@ -1,149 +1,131 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 :root{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body{
-    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
-    height: 100vh;
-    display: grid;
-    place-items: center;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
-
-
 #screen01 main{
-    width: 42.8rem;
-    height: 42.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  width: 42.8rem;
+  height: 42.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
 }
 
 #screen01 main h1{
-    color: #34355B;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 25.8rem;
+  color: #34355B;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 25.8rem;
 }
 
 #screen01 main p{
-    color: #34355B;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 2rem;
+  color: #34355B;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
 }
-
 #screen01 main img{
-    cursor: pointer;
-    
+  cursor: pointer;    
 }
 #screen01 main img:hover{
-    animation: tremer 0.5s infinite;
+  animation: tremer 0.5s infinite;
 }
-
 #screen02 main{
-    width: 42.8rem;
-    height: 56.4rem;
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.7rem;
+  width: 42.8rem;
+  height: 56.4rem;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7rem;
 }
-
 #screen02 main h1{
-    color: #34355B;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 29.3rem;
+  color: #34355B;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 29.3rem;
 }
-
-
 #screen02 main p{
-    color: #000;
-    text-align: center;
-    font-family: "Dancing Script";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 29.3rem;
-    background: #E4EDF1;
-    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
-    opacity: 0;
-    transform: translateY(150px) scale(0);
-    animation: aparecerCrescer 1s ease-in-out forwards;
-    
+  color: #000;
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 29.3rem;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  opacity: 0;
+  transform: translateY(150px) scale(0);
+  animation: aparecerCrescer 1s ease-in-out forwards;    
 }
-
 #screen02 main img{
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
-
 button{
-    color: #FFF;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 16px;
-    border-radius: 4px;
-    background: #FF9500;
-    border: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 16px;
+  border-radius: 4px;
+  background: #FF9500;
+  border: 0;
 }
-
 .hide{
-    display: none;
+  display: none;
 }
-
-
 
 @keyframes tremer {
-    0% { transform: translate(0px, 0px) rotate(0deg); }
-    20% { transform: translate(-3px, 3px) rotate(-3deg); }
-    40% { transform: translate(3px, -3px) rotate(3deg); }
-    60% { transform: translate(-3px, 3px) rotate(-3deg); }
-    80% { transform: translate(3px, -3px) rotate(3deg); }
-    100% { transform: translate(0px, 0px) rotate(0deg); }
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  20% { transform: translate(-3px, 3px) rotate(-3deg); }
+  40% { transform: translate(3px, -3px) rotate(3deg); }
+  60% { transform: translate(-3px, 3px) rotate(-3deg); }
+  80% { transform: translate(3px, -3px) rotate(3deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-
 @keyframes aparecerCrescer {
-    0% {
-        opacity: 0;
-        transform: translateY(150px) scale(0);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(150px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
